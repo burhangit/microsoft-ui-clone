@@ -70,6 +70,7 @@ ul {
   right: 30px;
   z-index: 2;
   display: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -284,8 +285,14 @@ ul {
     border-bottom: 0;
   }
 
+  .main_nav ul.main_menu.hide {
+    transform: translateX(-208px);
+    transition: all 250ms ease-in-out;
+  }
+
   .main_nav ul.main_menu.show {
     transform: translateX(-20px);
+    transition: all 250ms ease-in-out;
   }
 
   .home_cards {
